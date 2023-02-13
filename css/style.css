@@ -19,3 +19,48 @@
     --ninth-box: #ffd830;
 
 }
+
+body {
+    background-color: var(--primary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.small-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+ul {
+    list-style: none;
+}
+/* header  */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+}
+
+/* main  */
+
+main {
+    padding-top: 70px;
+}
+
+#hero, #free-trial {
+    background-color: var(--light-bg);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
