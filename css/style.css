@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --light-bg: #b4d0e7;
+    --button-bg: #0061ff;
+    --first-box-: #a2d39b;
+    --second-box: #61082b;
+    --third-box: #0093ce;
+    --fourth-box: #ff1c1c;
+    --fifth-box: #d5001f;
+    --sixth-box: #b4d0e7;
+    --eighth-box: #0d2481;
+    --ninth-box: #ffd830;
+
+}
