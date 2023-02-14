@@ -83,9 +83,6 @@ ul {
     align-content: space-between;
 }
 
-.mb-7 {
-    margin-bottom: 7rem;
-}
 
 a {
     text-decoration: none;
@@ -96,7 +93,7 @@ a {
 .button {
     background-color: var(--button-bg);
     color: var(--primary-color);
-    padding: .3rem 1rem;
+    padding: .5rem 1rem;
     text-decoration: none;
 }
 
@@ -118,6 +115,14 @@ img {
 
 .mb-2 {
     margin-bottom: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-7 {
+    margin-bottom: 7rem;
 }
 
 .mt-2 {
@@ -247,6 +252,20 @@ hr {
     
 }
 
+.partner {
+    width: 65%;
+}
+
+.partner-text {
+    width: 35%;
+    padding: 2rem;
+}
+
+a.button.white {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
 
 
 /* footer  */
