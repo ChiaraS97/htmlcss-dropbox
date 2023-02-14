@@ -10,15 +10,15 @@
     --secondary-color: #000000;
     --light-bg: #b4d0e7;
     --button-bg: #0061ff;
-    --border: #828080;
+    --border: #ded9d9;
     --first-box-: #a2d39b;
     --second-box: #61082b;
     --third-box: #0093ce;
     --fourth-box: #ff1c1c;
     --fifth-box: #d5001f;
     --sixth-box: #b4d0e7;
-    --eighth-box: #0d2481;
-    --ninth-box: #ffd830;
+    --seventh-box: #0d2481;
+    --eighth-box: #ffd830;
 
 }
 
@@ -83,6 +83,9 @@ ul {
     align-content: space-between;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
 
 a {
     text-decoration: none;
@@ -121,12 +124,16 @@ img {
     margin-bottom: 1rem;
 }
 
-.mb-7 {
-    margin-bottom: 7rem;
+.mb-9 {
+    margin-bottom: 9rem;
 }
 
 .mt-2 {
     margin-top: 2rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
 }
 
 .gap1 {
@@ -135,6 +142,26 @@ img {
 
 .p-1 {
     padding: 1.5rem 2rem;
+}
+
+.p-2 {
+    padding: 2.5rem 2rem;
+}
+
+.p-3 {
+    padding: 6rem 2rem;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.img-design {
+    padding-right: 13rem;
 }
 /* header  */
 
@@ -145,7 +172,7 @@ header {
     height: 70px;
     padding: 0 1.5rem;
     z-index: 1000;
-    font-size: .7rem;
+    font-size: .8rem;
     background-color: var(--primary-color);
 }
 
@@ -220,6 +247,10 @@ h1 {
     padding-right: 3.5rem;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 .card {
     width: calc(100 / 3);
     border: 1px solid var(--border);
@@ -262,11 +293,77 @@ hr {
 }
 
 a.button.white {
-    background-color: transparent;
+    background-color: var(--primary-color);
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
 }
 
+.f-card {
+    width: calc(100% / 3);
+}
+
+#more {
+    text-decoration: underline;
+    color: #0061ff;
+}
+
+.square {
+    width: calc(100% / 3);
+    background-color: rgb(230, 227, 227);
+    font-size: .7rem;
+}
+
+.square img {
+    width: 100%;
+    
+}
+
+.small-square {
+    width: calc(100% / 2);
+    height: 15vw;
+    
+    
+}
+
+.small-square img {
+    transform: scale(0.5);
+    filter: invert(1);
+    width: 100%;
+    
+}
+
+
+.first {
+    background-color: var(--first-box-);
+}
+
+.second {
+    background-color: var(--second-box);
+}
+
+.third {
+    background-color: var(--third-box);
+}
+
+.fourth {
+    background-color: var(--fourth-box);
+}
+
+.fifth {
+    background-color: var(--fifth-box);
+}
+
+.sixth {
+    background-color: var(--sixth-box);
+}
+
+.seventh {
+    background-color: var(--seventh-box);
+}
+
+.eighth {
+    background-color: var(--eighth-box);
+}
 
 /* footer  */
 footer {
