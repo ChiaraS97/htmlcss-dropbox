@@ -165,7 +165,12 @@ img {
 }
 
 .img-design {
-    padding-right: 13rem;
+    width: 55%;
+}
+
+.indent {
+    text-indent: -.5rem;
+    padding-left: 1rem;
 }
 /* header  */
 
@@ -318,8 +323,9 @@ a.button.white {
 .input-container {
     display: block;
     position: relative;
-    padding-left: 30px;
+    padding-left: 20px;
     margin-bottom: 12px;
+    margin-left: 10px;
     cursor: pointer;
     font-size: .8rem;
     -webkit-user-select: none;
