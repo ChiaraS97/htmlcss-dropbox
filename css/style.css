@@ -457,6 +457,18 @@ summary {
     content: '\f106';
   }
 
+  details[open] summary {
+    margin-bottom: 0.8rem;
+  }
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+
 /* footer  */
 footer {
     background-color: var(--secondary-color);
@@ -467,6 +479,10 @@ footer {
 
 footer a {
     color: var(--primary-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 footer ul {
