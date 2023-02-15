@@ -100,6 +100,10 @@ a {
     text-decoration: none;
 }
 
+.light-bg:hover {
+    background-color:#337ef6;
+}
+
 img {
     width: 100%;
 }
@@ -198,6 +202,10 @@ header li {
 
 header li:hover {
    box-shadow: 0 1px 0 0 black;
+}
+
+.second-ul li:last-child {
+    box-shadow: none;
 }
 
 .list {
@@ -307,10 +315,68 @@ a.button.white {
     color: #0061ff;
 }
 
+.input-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: .8rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #a0a2a6;
+    border-radius: 50%;
+}
+
+.input-container:hover .checkmark {
+    background-color: rgb(97, 96, 96);
+}
+
+.input-container input:checked ~ .checkmark {
+    background-color: #3675db;
+}
+
+.checkmark:after {
+    content: '';
+    display: none;
+    position:absolute;
+}
+
+.input-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.input-container .checkmark::after {
+    top: 4px;
+	left: 4px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: rgb(255, 255, 255);
+}
+
 .square {
     width: calc(100% / 3);
     background-color: rgb(230, 227, 227);
     font-size: .7rem;
+    height: calc(100vw / 3);
+    overflow-y: auto;
 }
 
 .square img {
@@ -320,9 +386,7 @@ a.button.white {
 
 .small-square {
     width: calc(100% / 2);
-    height: 15vw;
-    
-    
+    height: 50%;  
 }
 
 .small-square img {
@@ -331,10 +395,12 @@ a.button.white {
     width: 100%;
     
 }
-
-
 .first {
     background-color: var(--first-box-);
+}
+
+:is(.first, .second, .third, .fourth, .fifth, .sixth, .seventh, .eighth,):hover{
+    box-shadow: inset 0 0 0 15px  #ffffff74;
 }
 
 .second {
@@ -365,19 +431,61 @@ a.button.white {
     background-color: var(--eighth-box);
 }
 
+.faq-hr {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+summary {
+    display: block;
+  }
+    summary::-webkit-details-marker {
+    display: none;
+  }
+  summary::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; 
+    content: '\f107';
+    padding-left: 22rem;
+  }
+  details[open] > summary::after {
+    content: '\f106';
+  }
+
 /* footer  */
 footer {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     font-size: .7rem;
-    padding-top: 3rem;
+    padding: 3rem 0;
 }
 
 footer a {
     color: var(--primary-color);
 }
 
-#link span {
+footer ul {
     font-size: .9rem;
+    padding-bottom: 1rem;
 }
 
+footer ul li:first-child {
+    padding-bottom: 1.5rem;
+}
+
+footer li {
+    padding-bottom: .7rem;
+}
+
+.lang-hr {
+    width: 10%;
+}
+
+select {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: none;
+}
+
+option {
+    color: var(--secondary-color);
+}
